@@ -2,8 +2,10 @@
 
 Welcome to **SquirrellyStacks**, a secure, cloud-enabled, self-hosted home lab stack built on an old gaming PC. This setup leverages Docker, Cloudflare Tunnels, Pi-hole, Portainer, and Unbound, with identity-based login and DNS-level security.
 
-![Squirrelly Stacks](logo.png)
 
+<a href="https://squirrellystacks.dev/">
+  <img src="logo.png" alt="Squirrelly Stacks" width="200"/>
+</a>
 
 https://squirrellystacks.dev/
 
