@@ -200,6 +200,27 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+
+.card-link {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.card-link h2 {
+  font-size: 1.2rem;
+}
+
+.card-link p {
+  margin: 0;
+  color: var(--text-soft);
+}
+
+.card-link .text-link {
+  margin-top: auto;
+  font-weight: 600;
+}
+
 .compact p {
   margin-bottom: 0;
   color: var(--text-soft);
