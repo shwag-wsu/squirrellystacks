@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turning Architecture into a System with Power Apps, SharePoint, and LeanIX | SquirrellyStacks</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">
+          <img src="/logo.png" alt="SquirrellyStacks logo" class="brand-mark" />
+          <span>SquirrellyStacks</span>
+        </a>
+        <nav aria-label="Primary" class="top-nav">
+          <a href="/">Home</a>
+          <a href="/architecture/">Architecture</a>
+          <a href="/articles/">Articles</a>
+          <a href="/templates/">Templates</a>
+          <a href="/projects/">Projects</a>
+          <a href="/about/">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main container article-shell">
+      <article class="article-card">
+        <p class="eyebrow">Article</p>
+        <h1>Turning Architecture into a System with Power Apps, SharePoint, and LeanIX</h1>
+        <p class="article-meta">Enterprise architecture • Operating model • Power Apps • SharePoint • LeanIX</p>
+        <p class="lead">Architecture becomes much more useful when it moves beyond static documents. A practical internal setup combines reusable templates, lightweight workflow, and relationship management so decisions, reviews, and architecture assets can actually be used by delivery teams.</p>
+
+        <h2>The problem with document-only architecture</h2>
+        <p>Many architecture teams produce good content, but the content lives in disconnected documents, slide decks, or folders. That makes it hard to track ownership, hard to reuse templates, and hard to connect reviews or decisions back to the systems and capabilities they affect.</p>
+
+        <h2>A practical operating model</h2>
+        <ul>
+          <li><strong>SharePoint Lists:</strong> store core records such as reviews, decisions, and architecture overviews.</li>
+          <li><strong>Power Apps:</strong> provide an intake and workflow layer so teams can submit requests and update records without editing raw lists.</li>
+          <li><strong>LeanIX:</strong> maintain relationships between applications, capabilities, initiatives, and technology objects.</li>
+          <li><strong>Architecture repository:</strong> publish templates, guidance, and reference material so the operating model stays understandable.</li>
+        </ul>
+
+        <h2>How the templates fit</h2>
+        <div class="card-grid two-up">
+          <div>
+            <h3>Architecture Overview</h3>
+            <p>Use as the intake and framing record for new work. This can start as markdown and later become a SharePoint List item backed by a Power Apps form.</p>
+          </div>
+          <div>
+            <h3>Decision Record</h3>
+            <p>Store meaningful decisions in a list that supports filtering, ownership, and review triggers. Link those decisions to affected systems in LeanIX.</p>
+          </div>
+          <div>
+            <h3>Review Note</h3>
+            <p>Use one structure for ARB, TRB, design review, and exception review. A simple review type field lets the same template support multiple governance motions.</p>
+          </div>
+          <div>
+            <h3>Current vs Target State</h3>
+            <p>Use for roadmap framing and transition planning, with major application and capability relationships maintained in LeanIX.</p>
+          </div>
+        </div>
+
+        <h2>Example workflow</h2>
+        <ol>
+          <li>A team submits an architecture request through a Power Apps form.</li>
+          <li>The request writes to a SharePoint List using the architecture overview structure.</li>
+          <li>If the request needs governance, an ARB or TRB review note is created using the same review template.</li>
+          <li>Important decisions are captured in a decision record with status, owner, and review trigger.</li>
+          <li>Applications, capabilities, and related initiatives are linked in LeanIX so the decision is connected to the broader estate.</li>
+        </ol>
+
+        <h2>Why this works</h2>
+        <p>This approach keeps the system lightweight. SharePoint and Power Apps handle workflow and usability. LeanIX handles architecture relationships. The repository stays focused on templates, guidance, and examples. Together they create an architecture operating system instead of another pile of disconnected documents.</p>
+
+        <h2>Related links</h2>
+        <ul class="link-list">
+          <li><a href="/templates/">Browse the template library</a></li>
+          <li><a href="/articles/architecture-artifact-starter-kit/">Read the architecture artifact starter kit</a></li>
+          <li><a href="/architecture/governance-log/">See how governance records fit into the repository</a></li>
+          <li><a href="/architecture/reference-library/">Reference library for reusable assets and patterns</a></li>
+        </ul>
+
+        <p><a class="text-link" href="/articles/">← Back to Articles</a></p>
+      </article>
+    </main>
+  </body>
+</html>
