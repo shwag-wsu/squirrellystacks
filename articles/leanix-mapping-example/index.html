@@ -7,18 +7,27 @@
 <link rel="stylesheet" href="../../styles.css" />
 </head>
 <body>
-<header class="site-header">
-<div class="container header-inner">
-<a class="brand" href="/">
-<img src="/logo.png" class="brand-mark" />
-<span>SquirrellyStacks</span>
-</a>
-<nav class="top-nav">
-<a href="/">Home</a>
-<a href="/articles/">Articles</a>
-</nav>
-</div>
-</header>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">
+          <img src="/logo.png" alt="SquirrellyStacks logo" class="brand-mark" />
+          <span>SquirrellyStacks</span>
+        </a>
+        <nav aria-label="Primary" class="top-nav">
+          <a href="/">Home</a>
+          <div class="nav-dropdown">
+            <a href="/architecture/" class="nav-parent" aria-haspopup="true">Enterprise Architecture</a>
+            <div class="dropdown-menu" aria-label="Enterprise Architecture submenu">
+              <a href="/architecture/">Architecture</a>
+              <a href="/articles/">Articles</a>
+              <a href="/templates/">Templates</a>
+            </div>
+          </div>
+          <a href="/projects/">Projects</a>
+          <a href="/about/">About</a>
+        </nav>
+      </div>
+    </header>
 
 <main class="page-main container article-shell">
 <article class="article-card">
@@ -48,5 +57,15 @@
 <p>LeanIX provides the relationship layer that connects decisions, systems, and business capabilities into one navigable model.</p>
 </article>
 </main>
-</body>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 SquirrellyStacks</p>
+        <p>
+          <a href="https://github.com/shwag-wsu">GitHub</a>
+          ·
+          <a href="#" aria-label="LinkedIn profile placeholder">LinkedIn (placeholder)</a>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>

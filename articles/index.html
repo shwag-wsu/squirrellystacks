@@ -7,18 +7,24 @@
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <header class="site-header">
+        <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/">
           <img src="/logo.png" alt="SquirrellyStacks logo" class="brand-mark" />
           <span>SquirrellyStacks</span>
         </a>
-        <nav class="top-nav">
+        <nav aria-label="Primary" class="top-nav">
           <a href="/">Home</a>
-          <a href="/architecture/">Architecture</a>
-          <a href="/articles/">Articles</a>
-          <a href="/templates/">Templates</a>
+          <div class="nav-dropdown">
+            <a href="/architecture/" class="nav-parent" aria-haspopup="true">Enterprise Architecture</a>
+            <div class="dropdown-menu" aria-label="Enterprise Architecture submenu">
+              <a href="/architecture/">Architecture</a>
+              <a href="/articles/">Articles</a>
+              <a href="/templates/">Templates</a>
+            </div>
+          </div>
           <a href="/projects/">Projects</a>
+          <a href="/about/">About</a>
         </nav>
       </div>
     </header>
@@ -46,5 +52,15 @@
         </article>
       </section>
     </main>
+      <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 SquirrellyStacks</p>
+        <p>
+          <a href="https://github.com/shwag-wsu">GitHub</a>
+          ·
+          <a href="#" aria-label="LinkedIn profile placeholder">LinkedIn (placeholder)</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

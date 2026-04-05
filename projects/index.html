@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <header class="site-header">
+        <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/">SquirrellyStacks</a>
+        <a class="brand" href="/">
+          <img src="/logo.png" alt="SquirrellyStacks logo" class="brand-mark" />
+          <span>SquirrellyStacks</span>
+        </a>
         <nav aria-label="Primary" class="top-nav">
           <a href="/">Home</a>
-          <a href="/architecture/">Architecture</a>
-          <a href="/articles/">Articles</a>
+          <div class="nav-dropdown">
+            <a href="/architecture/" class="nav-parent" aria-haspopup="true">Enterprise Architecture</a>
+            <div class="dropdown-menu" aria-label="Enterprise Architecture submenu">
+              <a href="/architecture/">Architecture</a>
+              <a href="/articles/">Articles</a>
+              <a href="/templates/">Templates</a>
+            </div>
+          </div>
           <a href="/projects/">Projects</a>
-          <a href="/homelab/">Homelab</a>
           <a href="/about/">About</a>
         </nav>
       </div>
@@ -78,7 +86,27 @@
             <a href="#" aria-label="LEGO Lighting Project details placeholder">Details</a>
           </p>
         </article>
+        <article class="card project-card">
+          <h3>HomeLab</h3>
+          <p class="project-summary">
+            Lab environment notes, infrastructure experiments, and reference setup decisions that support architecture and delivery learning.
+          </p>
+          <p class="project-status"><strong>Status:</strong> Active and continuously updated.</p>
+          <p class="project-links">
+            <a href="/homelab/" aria-label="HomeLab project details">Open HomeLab</a>
+          </p>
+        </article>
       </section>
     </main>
+      <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 SquirrellyStacks</p>
+        <p>
+          <a href="https://github.com/shwag-wsu">GitHub</a>
+          ·
+          <a href="#" aria-label="LinkedIn profile placeholder">LinkedIn (placeholder)</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
