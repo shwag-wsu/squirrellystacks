@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <header class="site-header">
+        <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/">SquirrellyStacks</a>
+        <a class="brand" href="/">
+          <img src="/logo.png" alt="SquirrellyStacks logo" class="brand-mark" />
+          <span>SquirrellyStacks</span>
+        </a>
         <nav aria-label="Primary" class="top-nav">
           <a href="/">Home</a>
-          <a href="/architecture/">Architecture</a>
-          <a href="/articles/">Articles</a>
+          <div class="nav-dropdown">
+            <a href="/architecture/" class="nav-parent" aria-haspopup="true">Enterprise Architecture</a>
+            <div class="dropdown-menu" aria-label="Enterprise Architecture submenu">
+              <a href="/architecture/">Architecture</a>
+              <a href="/articles/">Articles</a>
+              <a href="/templates/">Templates</a>
+            </div>
+          </div>
           <a href="/projects/">Projects</a>
-          <a href="/homelab/">Homelab</a>
           <a href="/about/">About</a>
         </nav>
       </div>
@@ -24,19 +32,32 @@
       <header class="page-header">
         <p class="eyebrow">Profile</p>
         <h1>About</h1>
-        <p class="lead">SquirrellyStacks is an enterprise-architecture-first portfolio that captures strategy, execution, and practical learning from systems work.</p>
+        <p class="lead">
+          I'm Scott Harris, and SquirrellyStacks is my personal site for sharing enterprise architecture work,
+          implementation thinking, and project lessons learned from real systems delivery.
+        </p>
       </header>
 
       <section class="card-grid two-up">
         <article class="card">
-          <h3>What this site covers</h3>
-          <p>Enterprise architecture, ERP transformation, integration strategy, and reusable documentation frameworks.</p>
+          <h3>What I focus on</h3>
+          <p>I focus on enterprise architecture, ERP transformation, integration strategy, and practical documentation frameworks teams can actually use.</p>
         </article>
         <article class="card">
-          <h3>How to connect</h3>
-          <p>Use the homepage GitHub and LinkedIn links for collaboration, architecture conversations, or project discussions.</p>
+          <h3>How to connect with me</h3>
+          <p>You can reach me through GitHub today, and a LinkedIn profile link will be added soon.</p>
         </article>
       </section>
     </main>
+      <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 SquirrellyStacks</p>
+        <p>
+          <a href="https://github.com/shwag-wsu">GitHub</a>
+          ·
+          <a href="#" aria-label="LinkedIn profile placeholder">LinkedIn (placeholder)</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

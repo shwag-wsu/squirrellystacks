@@ -76,6 +76,7 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 0.9rem;
+  align-items: center;
 }
 
 .top-nav a {
@@ -86,6 +87,51 @@ a:hover {
 
 .top-nav a:hover {
   color: var(--text);
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-parent {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-parent::after {
+  content: "▾";
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  left: 0;
+  min-width: 12rem;
+  padding: 0.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  z-index: 30;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+}
+
+.dropdown-menu a:hover {
+  background: var(--surface-muted);
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown:focus-within .dropdown-menu {
+  display: block;
 }
 
 .hero {
@@ -251,6 +297,10 @@ h3 {
   justify-content: space-between;
   gap: 1rem;
   flex-wrap: wrap;
+}
+
+.footer-inner p {
+  margin: 0;
 }
 
 .page-main {

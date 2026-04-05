@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Architecture Repository | SquirrellyStacks</title>
+    <title>Enterprise Architecture | SquirrellyStacks</title>
     <link rel="stylesheet" href="../styles.css" />
   </head>
   <body>
-    <header class="site-header">
+        <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/">
           <img src="/logo.png" alt="SquirrellyStacks logo" class="brand-mark" />
@@ -15,10 +15,15 @@
         </a>
         <nav aria-label="Primary" class="top-nav">
           <a href="/">Home</a>
-          <a href="/architecture/">Architecture</a>
-          <a href="/articles/">Articles</a>
+          <div class="nav-dropdown">
+            <a href="/architecture/" class="nav-parent" aria-haspopup="true">Enterprise Architecture</a>
+            <div class="dropdown-menu" aria-label="Enterprise Architecture submenu">
+              <a href="/architecture/">Architecture</a>
+              <a href="/articles/">Articles</a>
+              <a href="/templates/">Templates</a>
+            </div>
+          </div>
           <a href="/projects/">Projects</a>
-          <a href="/homelab/">Homelab</a>
           <a href="/about/">About</a>
         </nav>
       </div>
@@ -26,72 +31,43 @@
 
     <main class="page-main container">
       <header class="page-header page-header-wide">
-        <p class="eyebrow">Architecture Repository</p>
-        <h1>Practical enterprise architecture, organized so people can actually use it.</h1>
+        <p class="eyebrow">Enterprise Architecture</p>
+        <h1>Enterprise architecture resources, guidance, and reusable assets.</h1>
         <p class="lead">
-          This section is intentionally structured like an architecture knowledge base: reusable viewpoints,
-          operating guidance, reference assets, standards, and governance history. It keeps enough TOGAF shape
-          to stay disciplined, but the content is written for delivery teams, program leads, and platform owners.
+          This landing page keeps the core enterprise architecture content grouped into three clear paths so teams can
+          quickly choose whether they need reference architecture, practical articles, or ready-to-use templates.
         </p>
       </header>
 
-      <section class="section-stack" aria-label="Architecture repository sections">
-        <div class="card-grid three-up">
-          <article class="card card-link">
-            <h2><a href="/architecture/metamodel/">Architecture Metamodel</a></h2>
-            <p>Definitions, relationships, and viewpoints for the core architecture objects used across the site.</p>
-            <a class="text-link" href="/architecture/metamodel/">Open section →</a>
-          </article>
+      <section class="card-grid three-up" aria-label="Enterprise Architecture navigation cards">
+        <article class="card card-link">
+          <h2><a href="/architecture/metamodel/">Architecture</a></h2>
+          <p>Explore the architecture repository sections, including metamodel, capability, landscape, standards, references, and governance log.</p>
+          <a class="text-link" href="/architecture/metamodel/">Open architecture assets →</a>
+        </article>
 
-          <article class="card card-link">
-            <h2><a href="/architecture/capability/">Architecture Capability</a></h2>
-            <p>How the architecture function works, what services it offers, and where reusable engagement templates fit.</p>
-            <a class="text-link" href="/architecture/capability/">Open section →</a>
-          </article>
+        <article class="card card-link">
+          <h2><a href="/articles/">Articles</a></h2>
+          <p>Read practical writeups on enterprise architecture operating models, ERP integration boundaries, and decision support.</p>
+          <a class="text-link" href="/articles/">Browse articles →</a>
+        </article>
 
-          <article class="card card-link">
-            <h2><a href="/architecture/landscape/">Architecture Landscape</a></h2>
-            <p>Current-state, target-state, and transition views that help planning conversations stay grounded.</p>
-            <a class="text-link" href="/architecture/landscape/">Open section →</a>
-          </article>
-
-          <article class="card card-link">
-            <h2><a href="/architecture/standards-information-base/">Standards Information Base</a></h2>
-            <p>Technology positions, lifecycle states, and decision guardrails that improve consistency without overpolicing.</p>
-            <a class="text-link" href="/architecture/standards-information-base/">Open section →</a>
-          </article>
-
-          <article class="card card-link">
-            <h2><a href="/architecture/reference-library/">Reference Library</a></h2>
-            <p>Reusable patterns, starter kits, sample artifacts, and links to templates that can be lifted into real work.</p>
-            <a class="text-link" href="/architecture/reference-library/">Open section →</a>
-          </article>
-
-          <article class="card card-link">
-            <h2><a href="/architecture/governance-log/">Governance Log</a></h2>
-            <p>Decision records, review outcomes, exceptions, and rationale that make architecture choices traceable.</p>
-            <a class="text-link" href="/architecture/governance-log/">Open section →</a>
-          </article>
-        </div>
-      </section>
-
-      <section class="card section-card">
-        <h2>Suggested way to use this repository</h2>
-        <div class="card-grid three-up">
-          <div>
-            <h3>Start with the landscape</h3>
-            <p>Use current-state and target-state views to frame the conversation and identify where change is really needed.</p>
-          </div>
-          <div>
-            <h3>Pull from the reference library</h3>
-            <p>Reuse templates and patterns instead of creating one-off artifacts for each initiative.</p>
-          </div>
-          <div>
-            <h3>Capture decisions in the log</h3>
-            <p>Keep enough rationale to explain why a path was chosen, what constraints mattered, and what to revisit later.</p>
-          </div>
-        </div>
+        <article class="card card-link">
+          <h2><a href="/templates/">Templates</a></h2>
+          <p>Use starter templates for architecture overviews, decision records, and current-to-target state planning artifacts.</p>
+          <a class="text-link" href="/templates/">Open templates →</a>
+        </article>
       </section>
     </main>
+      <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© 2026 SquirrellyStacks</p>
+        <p>
+          <a href="https://github.com/shwag-wsu">GitHub</a>
+          ·
+          <a href="#" aria-label="LinkedIn profile placeholder">LinkedIn (placeholder)</a>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
