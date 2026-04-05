@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Integration Boundaries in ERP Programs | SquirrellyStacks</title>
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/">
+          <img src="/logo.png" alt="SquirrellyStacks logo" class="brand-mark" />
+          <span>SquirrellyStacks</span>
+        </a>
+        <nav aria-label="Primary" class="top-nav">
+          <a href="/">Home</a>
+          <a href="/architecture/">Architecture</a>
+          <a href="/articles/">Articles</a>
+          <a href="/projects/">Projects</a>
+          <a href="/homelab/">Homelab</a>
+          <a href="/about/">About</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-main container article-shell">
+      <article class="article-card">
+        <p class="eyebrow">Article</p>
+        <h1>Integration Boundaries in ERP Programs</h1>
+        <p class="article-meta">Enterprise architecture • ERP • Integration</p>
+        <p class="lead">ERP programs get brittle fast when every integration becomes a special case. Clear boundaries help teams decide who owns what, where data should flow, and how change should be absorbed over time.</p>
+
+        <h2>Where programs struggle</h2>
+        <p>Large ERP initiatives often inherit a mix of direct system links, embedded business rules, and unclear ownership across source and downstream platforms. That creates integration debt before the target state has even stabilized.</p>
+
+        <h2>Useful boundary questions</h2>
+        <ol>
+          <li>Which system is authoritative for the data being exchanged?</li>
+          <li>Which team owns the interface contract and change process?</li>
+          <li>Should the interaction be synchronous, event-driven, or batch-oriented?</li>
+          <li>Where should transformation logic live so it does not get duplicated everywhere?</li>
+        </ol>
+
+        <h2>Practical guidance</h2>
+        <ul>
+          <li>Prefer clear interface contracts over informal field-level dependency chains.</li>
+          <li>Keep integrations aligned to domain ownership wherever possible.</li>
+          <li>Capture important exceptions before they become permanent architecture.</li>
+        </ul>
+
+        <h2>Related template links</h2>
+        <ul class="link-list">
+          <li><a href="/architecture/standards-information-base/">Standards language for integration choices</a></li>
+          <li><a href="/architecture/governance-log/">Decision logging for exceptions and tradeoffs</a></li>
+          <li><a href="/articles/architecture-artifact-starter-kit/">Starter assets for reviews and interface notes</a></li>
+        </ul>
+
+        <p><a class="text-link" href="/articles/">← Back to Articles</a></p>
+      </article>
+    </main>
+  </body>
+</html>

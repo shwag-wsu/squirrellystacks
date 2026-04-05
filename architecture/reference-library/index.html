@@ -9,7 +9,10 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/">SquirrellyStacks</a>
+        <a class="brand" href="/">
+          <img src="/logo.png" alt="SquirrellyStacks logo" class="brand-mark" />
+          <span>SquirrellyStacks</span>
+        </a>
         <nav aria-label="Primary" class="top-nav">
           <a href="/">Home</a>
           <a href="/architecture/">Architecture</a>
@@ -22,16 +25,56 @@
     </header>
 
     <main class="page-main container">
-      <header class="page-header">
+      <header class="page-header page-header-wide">
         <p class="eyebrow">Architecture Repository</p>
         <h1>Reference Library</h1>
-        <p class="lead">Placeholder page for reusable architecture patterns, template assets, and sample deliverables.</p>
+        <p class="lead">The reference library is where architecture becomes reusable. It should contain the small number of patterns, templates, and examples that teams can pull into real delivery work without major rewriting.</p>
       </header>
 
-      <article class="card compact">
-        <p>Content for this section will be added in a future iteration. Use this page as the entry point for reusable reference assets.</p>
-        <p><a class="text-link" href="/architecture/">← Back to Architecture landing</a></p>
-      </article>
+      <section class="content-grid">
+        <article class="card section-card">
+          <h2>What belongs here</h2>
+          <ul>
+            <li>Reference architectures for common solution shapes</li>
+            <li>Starter templates for reviews, decisions, and transition planning</li>
+            <li>Example diagrams and document structures</li>
+            <li>Links to articles that explain when and how to use an asset</li>
+          </ul>
+        </article>
+        <article class="card section-card">
+          <h2>What good looks like</h2>
+          <p>A useful reference asset is short, adaptable, and opinionated enough to save time. It should be understandable by project teams without needing a separate workshop to decode it.</p>
+        </article>
+      </section>
+
+      <section class="card section-card">
+        <h2>Starter assets</h2>
+        <ul class="link-list">
+          <li><a href="/articles/architecture-artifact-starter-kit/">Architecture artifact starter kit</a></li>
+          <li><a href="/articles/integration-boundaries-in-erp-programs/">Integration boundary guidance for ERP work</a></li>
+          <li><a href="/articles/capability-mapping-for-decision-making/">Capability map framing for planning conversations</a></li>
+        </ul>
+      </section>
+
+      <section class="card section-card">
+        <h2>Suggested library organization</h2>
+        <div class="card-grid three-up">
+          <div>
+            <h3>Views</h3>
+            <p>Current-state, target-state, and context diagrams.</p>
+          </div>
+          <div>
+            <h3>Decisions</h3>
+            <p>ADRs, exceptions, and review outcomes.</p>
+          </div>
+          <div>
+            <h3>Patterns</h3>
+            <p>Integration, data, security, and platform reference material.</p>
+          </div>
+        </div>
+      </section>
+
+      <p><a class="text-link" href="/architecture/">← Back to Architecture landing</a></p>
     </main>
   </body>
 </html>

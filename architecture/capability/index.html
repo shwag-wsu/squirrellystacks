@@ -9,7 +9,10 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/">SquirrellyStacks</a>
+        <a class="brand" href="/">
+          <img src="/logo.png" alt="SquirrellyStacks logo" class="brand-mark" />
+          <span>SquirrellyStacks</span>
+        </a>
         <nav aria-label="Primary" class="top-nav">
           <a href="/">Home</a>
           <a href="/architecture/">Architecture</a>
@@ -22,16 +25,48 @@
     </header>
 
     <main class="page-main container">
-      <header class="page-header">
+      <header class="page-header page-header-wide">
         <p class="eyebrow">Architecture Repository</p>
         <h1>Architecture Capability</h1>
-        <p class="lead">Placeholder page for architecture team operating model, methods, tools, competencies, and engagement workflows.</p>
+        <p class="lead">This section describes how the architecture practice operates in real life: where requests come from, how engagement works, what artifacts get reused, and how the team adds value without becoming a bottleneck.</p>
       </header>
 
-      <article class="card compact">
-        <p>Content for this section will be added in a future iteration. Use this page as the entry point for architecture capability assets.</p>
-        <p><a class="text-link" href="/architecture/">← Back to Architecture landing</a></p>
-      </article>
+      <section class="content-grid">
+        <article class="card section-card">
+          <h2>Core services</h2>
+          <ul>
+            <li>Roadmap and investment support</li>
+            <li>Solution shaping and design review</li>
+            <li>Reference architecture and standards guidance</li>
+            <li>Decision facilitation and governance</li>
+          </ul>
+        </article>
+        <article class="card section-card">
+          <h2>How the team should engage</h2>
+          <p>Architecture works best when it is involved early enough to shape boundaries and risks, but not so early that it creates abstract work disconnected from delivery. A practical operating model usually includes lightweight intake, defined review triggers, and a clear handoff into delivery teams.</p>
+        </article>
+      </section>
+
+      <section class="card section-card">
+        <h2>Typical workflow</h2>
+        <ol>
+          <li>Identify the business or delivery problem.</li>
+          <li>Decide whether the work needs reference guidance, a review, or an explicit architecture decision.</li>
+          <li>Reuse an existing template or pattern before creating a new one.</li>
+          <li>Capture the decision and any standards impact in the governance log.</li>
+        </ol>
+      </section>
+
+      <section class="card section-card">
+        <h2>Template links</h2>
+        <ul class="link-list">
+          <li><a href="/articles/architecture-artifact-starter-kit/">Architecture review and decision starter kit</a></li>
+          <li><a href="/architecture/governance-log/">Governance log structure and review outcomes</a></li>
+          <li><a href="/architecture/reference-library/">Reusable patterns and starter assets</a></li>
+        </ul>
+      </section>
+
+      <p><a class="text-link" href="/architecture/">← Back to Architecture landing</a></p>
     </main>
   </body>
 </html>

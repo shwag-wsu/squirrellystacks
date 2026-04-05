@@ -9,7 +9,10 @@
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="/">SquirrellyStacks</a>
+        <a class="brand" href="/">
+          <img src="/logo.png" alt="SquirrellyStacks logo" class="brand-mark" />
+          <span>SquirrellyStacks</span>
+        </a>
         <nav aria-label="Primary" class="top-nav">
           <a href="/">Home</a>
           <a href="/architecture/">Architecture</a>
@@ -22,16 +25,51 @@
     </header>
 
     <main class="page-main container">
-      <header class="page-header">
+      <header class="page-header page-header-wide">
         <p class="eyebrow">Architecture Repository</p>
         <h1>Architecture Landscape</h1>
-        <p class="lead">Placeholder page for current-state and target-state enterprise architecture views and transition roadmaps.</p>
+        <p class="lead">Landscape views help anchor strategy in reality. They show the current operating environment, where the major pain points sit, and what a useful target state should change first.</p>
       </header>
 
-      <article class="card compact">
-        <p>Content for this section will be added in a future iteration. Use this page as the entry point for landscape documentation.</p>
-        <p><a class="text-link" href="/architecture/">← Back to Architecture landing</a></p>
-      </article>
+      <section class="content-grid">
+        <article class="card section-card">
+          <h2>Current-state focus</h2>
+          <p>Start by describing the most important business capabilities, the systems that support them, key integration paths, and the parts of the estate creating risk or drag. The goal is not to model everything. The goal is to make the important parts visible enough to discuss tradeoffs.</p>
+        </article>
+        <article class="card section-card">
+          <h2>Target-state focus</h2>
+          <p>Target-state views should show better boundaries, better data flow, and less accidental complexity. They should be specific enough to influence delivery but lightweight enough to update as assumptions change.</p>
+        </article>
+      </section>
+
+      <section class="card section-card">
+        <h2>Useful landscape slices</h2>
+        <div class="card-grid three-up">
+          <div>
+            <h3>Business</h3>
+            <p>Capabilities, ownership, and pain points that matter for prioritization.</p>
+          </div>
+          <div>
+            <h3>Application</h3>
+            <p>System boundaries, integration responsibilities, and modernization candidates.</p>
+          </div>
+          <div>
+            <h3>Data</h3>
+            <p>Critical entities, system of record concerns, and downstream analytics needs.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card section-card">
+        <h2>Template links</h2>
+        <ul class="link-list">
+          <li><a href="/articles/architecture-artifact-starter-kit/">Current-state / target-state starter outline</a></li>
+          <li><a href="/articles/capability-mapping-for-decision-making/">Capability mapping article</a></li>
+          <li><a href="/architecture/metamodel/">Metamodel definitions behind landscape views</a></li>
+        </ul>
+      </section>
+
+      <p><a class="text-link" href="/architecture/">← Back to Architecture landing</a></p>
     </main>
   </body>
 </html>
